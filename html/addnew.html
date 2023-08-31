@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="../styles/Header.css" rel="stylesheet">
+<link href="../styles/AddNew.css" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add new coupon</title>
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <div class="navbar">
+            <div class="container nav-container">
+                <div class="menu-size-container">
+                    <button class="menu-btn">
+                        <div class="hamburger-lines">
+                            <span class="line line1"></span>
+                            <span class="line line2"></span>
+                            <span class="line line3"></span>
+                        </div>
+                    </button>
+                    <img src="../img/epam_logo.svg" alt="Logo" class="header-logo">
+                </div>
+                <div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-container">
+        <form action="" method="get">
+            <input name="searchBox" class="search-box"/>
+            <select class="select-search-box">
+                <option>All categories</option>
+                <option>Certificates</option>
+                <option>Tags</option>
+                <option>Orders</option>
+            </select>
+        </form>
+    </div>
+    <div class="header-container header-container-links">
+        <span class="material-icons gray-icon">favorite</span>
+        <span class="material-icons gray-icon">shopping_cart</span>
+
+        <ul>
+            <li><a href="#" class="header-link">Login</a></li>
+            <li><a href="#" class="header-link">Sign Up</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="title-container">
+    <div class="size-container">
+        <div class="title-box">
+            <span>Add New Coupon</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="content-container">
+    <div class="size-container">
+        <form action="" method="post">
+            <div class="grid-template-container">
+                <div>
+                    <label>Company</label>
+                    <input type="text" name="company" class="dataElement">
+                </div>
+                <div>
+                    <label>Item Name</label>
+                    <input type="text" name="itemName" class="dataElement">
+                </div>
+                <div>
+                    <label>Category</label><br/>
+                    <select name="category" class="dataElement">
+                        <option>All categories</option>
+                        <option>Certificates</option>
+                        <option>Tags</option>
+                        <option>Orders</option>
+                    </select>
+                </div>
+                <div id="short-desc-container">
+                    <label>Short description:</label><br/>
+                    <textarea name="shortDesc" class="dataElement textAreaSizing"></textarea>
+                </div>
+                <div>
+                    <label>Valid to</label><br/>
+                    <input type="datetime-local" name="validTo" class="dataElement">
+                </div>
+                <div>
+                    <label>Price</label><br/>
+                    <input type="text" name="price" class="dataElement">
+                </div>
+                <div id="long-desc-container">
+                    <label>Long Description</label><br/>
+                    <textarea name="longDesc" class="dataElement textAreaSizing"></textarea>
+                </div>
+                <div>
+                    <label>Images</label><br/>
+                    <input type="file" name="image" class="dataElement">
+                </div>
+                <div id="btn-container">
+                    <button type="reset" id="cancelBtn">Cancel</button>
+                    <button type="submit" id="submitBtn">Sign Up</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
